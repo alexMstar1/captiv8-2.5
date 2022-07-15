@@ -1,0 +1,271 @@
+.commerce-hero {
+  padding-top: 105px;
+  background-color: #F5FFFF;
+  padding-bottom: 119px;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__item {
+    width: 50%;
+  }
+
+  &__h1 {
+    font-size: 65px;
+    margin-bottom: 13px;
+  }
+
+  &__description {
+    text-align: left;
+    max-width: 550px;
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.commerce-influencers {
+  padding-top: 97px;
+  position: relative;
+  margin-bottom: 192px;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 128px;
+  }
+
+  &__h4 {
+    margin-bottom: 17px;
+  }
+
+  &__h2 {
+    margin-bottom: 17px;
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #DFE9EC;
+    border-radius: 36px;
+    gap: 38px;
+  }
+
+  &__item {
+    width: 50%;
+  }
+
+  &__item &__description {
+    text-align: left;
+    max-width: 560px;
+  }
+
+  &__img {
+    width: 100%;
+    margin: -35px -25px;
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+  }
+}
+
+.commerce-influencers:after {
+  content: '';
+  position: absolute;
+  bottom: -315px;
+  background: url("../img/commerce-vawe.svg") no-repeat /cover;
+  width: 100%;
+  height: 130px;
+}
+
+.commerce-activate {
+  background-color: #F8F8F8;
+  padding-top: 177px;
+  padding-bottom: 57px;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 73px;
+  }
+
+  &__h2 {
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    max-width: 1000px;
+
+  }
+
+  &-slider__body {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+  }
+
+  &-slider__img {
+    width: 100%;
+  }
+
+  &-slider__item {
+    width: 50%;
+  }
+
+  &-slider__h3 {
+    color: $c-prussian-blue;
+    margin-bottom: 24px;
+    max-width: 536px;
+  }
+
+  &-slider__description {
+    text-align: left;
+    max-width: 540px;
+  }
+
+}
+
+.commerce-testimonial {
+  padding-top: 77px;
+  padding-bottom: 96px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__h4 {
+    margin-bottom: 63px;
+  }
+
+  .testimonial__text {
+    max-width: 667px;
+    width: 100%
+  }
+}
+.commerce-measure{
+  padding-top: 137px;
+  padding-bottom: 50px;
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 114px;
+  }
+
+  &__item:nth-child(1){
+    flex: 0 0 50%;
+  }
+  &__item:nth-child(2){
+    flex: 0 0 50%;
+  }
+  &__item:nth-child(3){
+    flex: 0 0 100%;
+    display: inherit;
+  }
+  &__description{
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  &__list{
+    list-style-type: none;
+  }
+  &__list-item{
+    font-family: $work-sans;
+    font-size: 22px;
+    line-height: 180%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    max-width: 525px;
+  }
+  &__list-item:before{
+    align-items: center;
+    content: '';
+    background: url("../img/charm-circle.png") no-repeat /cover;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-right: 13px;
+
+  }
+  &__img{
+    width: 100%;
+  }
+}
+.commerce-case{
+  padding-top: 86px;
+  padding-bottom: 85px;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
+  }
+  &__item{
+    width: 40%;
+  }
+  &__item{
+    width: 60%;
+  }
+  &__item:nth-child(2){
+    flex-shrink: 0;
+  }
+  &__img{
+    width: 100%;
+    border-radius: 33px;
+  }
+  &__body{
+    padding:71px 26px 50px 57px;
+    background-color: $c-prussian-blue;
+    border-radius: 14px;
+    position: relative;
+  }
+  .orange-label{
+    position: absolute;
+    padding: 16px 21px;
+    top: -25px;
+
+  }
+  &__h3{
+    color:$c-white;
+    max-width: 374px;
+    margin-bottom: 16px;
+  }
+  &__description{
+    color:$c-white;
+    max-width: 574px;
+    text-align: left;
+    margin-bottom: 32px;
+    span{
+      font-weight: 700;
+    }
+  }
+}
+.commerce-cta{
+  background-color: #E8F0F0;
+  padding-top:208px;
+  padding-bottom: 165px;
+  &__content{
+    max-width: 978px;
+    margin: 0 auto;
+  }
+  &__h3{
+    font-size: 65px;
+    line-height: 120px;
+    color:$c-prussian-blue;
+    margin-bottom: 66px;
+
+    span{
+      display: block;
+      color:$c-elm-blue;
+    }
+  }
+}

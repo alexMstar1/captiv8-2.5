@@ -1,0 +1,346 @@
+.header {
+  font-family: $work-sans;
+  background-color: $c-gray-99;
+  position: relative;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 35px;
+
+    //@include tablet-lg{
+    //  display: none;
+    //}
+    //@include mobile-lg{
+    //  display: none;
+    //}
+  }
+
+  &__burger {
+    display: flex;
+    gap: 190px;
+    @include tablet-lg {
+      position: fixed;
+      top: 100px;
+      right: 0;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: none;
+      background-color: #fff;
+      z-index: 8;
+      padding: 40px;
+      flex-direction: column;
+    }
+    @include mobile-lg {
+      max-width: 100%;
+    }
+
+  }
+
+  .is-active {
+    display: flex;
+  }
+
+  .is-active .header__inner:nth-child(1) {
+    transform: translateY(15px) rotate(-40deg);
+    transition: transform .2s .1s;
+  }
+
+  .is-active .header__inner:nth-child(2) {
+    opacity: 0;
+    transition: transform .2s .2s, opacity .2s .2s;
+  }
+  .is-active .header__inner:nth-child(3) {
+    transform: translateY(15px) rotate(40deg);
+  }
+
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+    gap: 59px;
+    @include tablet-lg {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link {
+      font-family: $work-sans;
+      font-size: 20px;
+      line-height: 160.3%;
+      font-weight: 500;
+      color: $c-prussian-blue;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+      z-index: 3;
+      @include tablet-lg {
+        .product {
+          display: none;
+        }
+      }
+
+      &-body {
+        position: absolute;
+        padding: 36px 30px 50px 40px;
+        left: -265px;
+        top: 0;
+        background-color: $c-white;
+        z-index: 3;
+        @include tablet-lg {
+          position: relative;
+          overflow: auto;
+          right: 0;
+          left: unset;
+        }
+      }
+
+      &-list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 217px repeat(5, 1fr);
+        grid-template-rows: 3fr;
+        grid-gap: 51px;
+        border-bottom: 1px solid $c-aqua-blue;
+        padding-bottom: 34px;
+        margin-bottom: 34px;
+        @include tablet-lg {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__item:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        &__link {
+          font-family: $work-sans;
+          font-size: 14px;
+          line-height: 130.3%;
+          font-weight: 500;
+          text-decoration: none;
+          color: $c-full-black;
+
+          .product {
+            color: #EBEDED;
+          }
+        }
+
+        &__link:hover {
+          .product {
+            color: #96DBD3;
+          }
+        }
+      }
+
+      &-list:nth-child(2) {
+        grid-template-columns: 217px 66px 66px 66px;
+      }
+
+      &-list:nth-child(3) {
+        grid-template-columns: 217px 66px 66px 148px;
+        border-bottom: none;
+        margin-bottom: 0;
+
+        .dropdown-list__item:nth-child(4) {
+          align-self: center;
+        }
+      }
+
+      .modify-link {
+        display: flex;
+        align-items: center;
+        color: #436E82;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+
+      }
+
+      .modify-link svg {
+        margin-left: 15px;
+      }
+    }
+
+    .dropdown-body {
+      display: none;
+    }
+
+    &__item:hover .dropdown-body {
+      display: grid;
+      transition: 1s ease-in-out all;
+    }
+
+  }
+
+  .product-title {
+    font-family: $lora;
+    color: $c-prussian-blue;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160.3%;
+  }
+
+  .product-description {
+    font-family: $work-sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 147.3%;
+    color: $c-grey-2;
+  }
+
+  .header-action {
+    display: flex;
+    align-items: center;
+
+    &__item:nth-child(1) {
+      margin-right: 11px;
+    }
+
+  }
+
+  &__toggler {
+    display: none;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    pointer-events: auto;
+    @include tablet-lg {
+      display: block;
+    }
+  }
+
+  &__wrap {
+    display: block;
+  }
+
+  &__inner {
+    background-color: $c-prussian-blue;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__inner:nth-child(2) {
+    height: 3px;
+    transform: translateY(15px)
+  }
+
+  &__inner:nth-child(3) {
+    transform: translateY(30px);
+  }
+
+}
+
+.menu-svg {
+  width: 64px;
+  height: 64px;
+}
+
+.is-second:nth-child(2):hover .is-body {
+  display: flex;
+  transition: 1s ease-in-out all;
+}
+
+.is-body {
+  display: none;
+  position: absolute;
+  padding: 36px 30px 50px 40px;
+  right: -125px;
+  top: 0;
+  background-color: $c-white;
+  z-index: 2;
+  @include tablet-lg {
+    width: 100%;
+    position: relative;
+    right: unset;
+  }
+}
+
+.is-list {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.is-item {
+
+}
+
+.is-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 147.3%;
+  color: #000000;
+
+  svg {
+
+    margin-right: 8px;
+  }
+}
+
+.is-company:hover .is-body-comp {
+  display: flex;
+  transition: 1s ease-in-out all;
+}
+
+.is-body-comp {
+  display: none;
+  position: absolute;
+  padding: 36px 30px 50px 40px;
+  right: -70px;
+  top: 0;
+  background-color: $c-white;
+  z-index: 2;
+  @include tablet-lg {
+    right: unset;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.is-list-comp {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.is-item-comp {
+
+}
+
+.is-link-comp {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 147.3%;
+  color: #000000;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__burger {
+    gap: 40px;
+  }
+
+}

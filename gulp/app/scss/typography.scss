@@ -1,0 +1,43 @@
+.orange-heading {
+  color: $c-orange;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: $work-sans;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-family: $work-sans;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 180%;
+  text-align: center;
+  color: $c-grey-2;
+}
+
+.h2 {
+  font-family: $lora;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  color: $c-prussian-blue;
+  letter-spacing: -0.5px;
+}
+
+.h3 {
+  color: $c-elm-blue;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 120%;
+  color: $c-prussian-blue;
+  font-family: $work-sans;
+}

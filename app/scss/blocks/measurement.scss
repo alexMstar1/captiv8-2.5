@@ -1,0 +1,768 @@
+.measurement-hero {
+  position: relative;
+  background-color: #EDF5F5;
+  padding-top: 150px;
+  padding-bottom: 178px;
+  z-index: 2;
+  @include tablet-lg {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("../img/measurement-hero-vector-left.svg") no-repeat /contain;
+    width: 367px;
+    height: 220px;
+    bottom: 50px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/measurement-hero-vector-right.png") no-repeat /contain;
+    width: 342px;
+    height: 653px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1036px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    @include mobile-lg {
+      font-size: 56px;
+    }
+
+    @include mobile-md{
+      font-size: 50px;
+    }
+    span {
+      color: $c-perisimmon;
+    }
+
+  }
+
+  &__description {
+    max-width: 973px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+  }
+}
+
+.measurement-perfomance {
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 133px;
+  @include tablet-lg {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("../img/measurement-perfomance-dots-blue.svg") no-repeat /contain;
+    width: 139px;
+    height: 139px;
+    bottom: 683px;
+    left: -45px;
+    z-index: -1;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/measurement-perfomance-dots-big.svg") no-repeat /cover;
+    width: 135px;
+    height: 202px;
+    top: 854px;
+    right: 4px;
+    z-index: -1;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 109px auto;
+    max-width: 980px;
+    @include mobile-lg {
+      margin: 0 auto 60px auto;
+    }
+  }
+
+  &__text {
+
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+
+    text-align: center;
+  }
+
+  &__key {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 39px;
+    margin-bottom: 92px;
+    z-index: 2;
+    @include tablet-md {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__advanced {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+    max-width: 1288px;
+    margin: 0 auto 132px auto;
+    z-index: 2;
+    @include tablet-md {
+      flex-direction: column-reverse;
+      margin: 0 auto 60px auto;
+    }
+  }
+
+  &__analysis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 38px;
+    @include tablet-md {
+      flex-direction: column;
+    }
+    p{
+      @include mobile-lg{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item-key {
+    position: relative;
+    width: 50%;
+    z-index: 2;
+    @include tablet-md {
+      width: 100%;
+    }
+
+    &:first-child:before {
+      position: absolute;
+      content: '';
+      background: url("../img/measurement-perfomance-vector.png") no-repeat /cover;
+      width: 252px;
+      height: 327px;
+      top: -116px;
+      right: -289px;
+      z-index: -1;
+      @include tablet-md {
+        right: 0;
+        top: -146px;
+      }
+
+    }
+
+  }
+
+  &__item-advanced:first-child {
+    position: relative;
+    width: 40%;
+    max-width: 500px;
+    text-align: left;
+    @include tablet-md {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/measurement-perfomance-arrow.svg") no-repeat /cover;
+      width: 161px;
+      height: 136px;
+
+      top: -165px;
+      right: 125px;
+      @include tablet-lg {
+        top: -136px;
+        right: 117px;
+      }
+      @include tablet-md {
+        top: -691px;
+        right: 290px;
+        width: 200px;
+        height: 171px;
+      }
+
+    }
+  }
+
+  &__item-advanced:last-child {
+    position: relative;
+    width: 60%;
+    @include tablet-md {
+      width: 100%;
+    }
+  }
+
+  &__item-analysis:first-child {
+    width: 50%;
+    position: relative;
+    @include tablet-md {
+      width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../img/measurement-perfomance-arrow-orange.svg) 0 0/contain no-repeat;
+      width: 132px;
+      height: 119px;
+      bottom: 15px;
+      left: 215px;
+      z-index: -1;
+      @include tablet-md {
+        width: 232px;
+        height: 179px;
+      }
+      @include mobile-lg {
+        bottom: 16px;
+        left: 85px;
+        width: 172px;
+        height: 119px;
+      }
+    }
+
+  }
+
+  &__h3 {
+    color: $c-prussian-blue;
+    @include tablet-md {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    text-align: left;
+    max-width: 560px;
+    @include tablet-md {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__item:nth-child(3) {
+    max-width: 475px;
+  }
+
+  &__item:nth-child(6) {
+    p {
+      max-width: 652px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.measurement-reporting {
+  z-index: 1;
+  position: relative;
+  background-color: #EDF5F5;
+  padding-top: 97px;
+  padding-bottom: 103px;
+  @include mobile-lg{
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  &:before {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    background: url("../img/measurement-reporting-cone.svg") no-repeat /contain;
+    width: 1064px;
+    height: 993px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include tablet-lg {
+      left: 47%
+    }
+    @include tablet-md {
+      width: 100%;
+    }
+    @include  mobile-lg{
+      right: 18px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  &__h2 {
+    position: relative;
+    margin-bottom: 16px;
+    @include mobile-md{
+      font-size: 40px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/measurement-reporting-line.svg") no-repeat /contain;
+      width: 358px;
+      height: 17px;
+      bottom: -8px;
+      right: -8px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 102px;
+    @include mobile-lg{
+      row-gap: 50px;
+    }
+  }
+
+  &__item:nth-child(1) {
+    width: 40%;
+    @include tablet-md {
+      width: 60%;
+    }
+    @include mobile-lg{
+      width: 100%;
+    }
+
+  }
+  @include mobile-md{
+    h3{
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+  &__item:nth-child(2) {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    @include tablet-md {
+      width: 80%;
+    }
+    @include mobile-lg{
+      width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/measurement-reporting-arrow.svg") no-repeat /contain;
+      width: 333px;
+      height: 356px;
+      top: -95px;
+      left: -375px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__body {
+    background-color: $c-prussian-blue;
+    padding: 32px;
+    border-radius: 14px;
+    @include tablet-lg {
+      padding: 32px;
+    }
+    @include mobile-lg{
+      padding: 16px;
+    }
+  }
+
+  &__h3 {
+    color: $c-white;
+    @include mobile-lg{
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    color: $c-white;
+    font-family: $work-sans;
+    max-width: 620px;
+    display: flex;
+
+  }
+
+  &__list-item:before {
+    content: '';
+    background: url("../img/charm-circle.png") no-repeat /cover;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+}
+
+.measurement-customized {
+  padding-top: 134px;
+  margin-bottom: 50px;
+  @include tablet-md {
+    padding-top: 100px;
+  }
+  @include mobile-lg{
+    padding-top: 60px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 162px;
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+    @include mobile-lg{
+      text-align: center;
+    }
+  }
+
+  &__description {
+    max-width: 1034px;
+
+  }
+
+  &-slider__body {
+    background: #F6F5F5;
+    border-radius: 36px;
+    padding: 45px 70px 123px 61px;
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+    align-items: center;
+    max-height: 802px;
+    height: 100%;
+    @include tablet-md {
+      flex-direction: column;
+      padding: 50px;
+      max-height: none;
+      height: unset;
+    }
+    @include mobile-lg{
+      padding: 28px;
+    }
+  }
+  &-slider__item{
+    @include mobile-md{
+      h3{
+        font-size: 30px;
+      }
+    }
+  }
+  &-slider__item:nth-child(1) {
+    width: 60%;
+    flex: 0 0 60%;
+    @include tablet-md {
+      width: 100%;
+    }
+  }
+
+  &-slider__item:nth-child(2) {
+    width: 40%;
+    flex: 0 0 40%;
+    @include tablet-md {
+      width: 100%;
+
+    }
+  }
+
+  &-slider__item:nth-child(3) {
+    position: absolute;
+    bottom: 47px;
+    left: 35%;
+    @include tablet-lg {
+      left: 30%;
+    }
+    @include tablet-md {
+      position: unset;
+    }
+
+  }
+
+  &-slider__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-slider__description {
+    text-align: left;
+  }
+
+}
+
+
+.measurement-testimonial {
+  padding-top: 77px;
+  margin-bottom: 101px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet-md {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    @include tablet-md {
+      width: 100%;
+    }
+    @include mobile-lg{
+      flex-direction: column;
+    }
+  }
+  .testimonial__img{
+    @include mobile-lg{
+      width: 100%;
+      height: 432px;
+      object-position: top;
+      object-fit: cover;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+  }
+  &__wrapper{
+    @include mobile-lg{
+      width: 100%;
+    }
+  }
+  &__h4 {
+    margin-bottom: 69px;
+  }
+
+  &__text {
+    max-width: 681px;
+    width: 100%;
+    @include tablet-md {
+      padding: 34px 33px 38px 37px;
+      margin: 0;
+      font-size: 28px;
+    }
+    @include mobile-lg{
+      padding: 16px 24px;
+      font-size: 24px;
+    }
+    @include mobile-md{
+      font-size: 20px;
+    }
+  }
+
+}
+
+.measurement-api {
+  position: relative;
+  padding-top: 129px;
+  padding-bottom: 147px;
+  background-color: #F8F8F8;
+  @include tablet-md {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include tablet-md {
+      flex-direction: column-reverse;
+      z-index: 2;
+      gap: 40px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/measurement-api-vector.svg") no-repeat /contain;
+      width: 153px;
+      height: 208px;
+      bottom: 0;
+      left: 0;
+
+
+    }
+  }
+
+  &__item {
+    z-index: 2;
+    position: relative;
+    width: 50%;
+    @include tablet-md {
+      width: 100%;
+      a {
+        display: inline-block;
+        margin-left: 200px;
+      }
+      @include mobile-lg{
+       a {
+         margin-left: 40px;
+       }
+       }
+      @include mobile-md{
+        a{
+          margin-left: 15px;
+        }
+      }
+
+    }
+
+    &:nth-child(2) {
+      &:before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        background: url("../img/measurement-api-circle.svg") no-repeat /contain;
+        width: 114px;
+        height: 116px;
+        bottom: -34px;
+        left: -29px;
+        z-index: -1;
+      }
+
+      &:after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        background: url("../img/measurement-api-dots.svg") no-repeat /contain;
+        width: 171px;
+        height: 174px;
+        top: -38px;
+        right: -18px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+    @include tablet-md {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    list-style-type: none;
+
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    font-family: $work-sans;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    color: #333333;
+    max-width: 524px;
+    margin-bottom: 24px;
+    z-index: 2;
+    @include mobile-md{
+      font-size: 18px;
+    }
+  }
+
+  &__list-item:nth-child(2) {
+    margin-bottom: 48px;
+  }
+
+  &__list-item:before {
+    content: '';
+    background: url("../img/charm-circle.png") no-repeat /cover;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+
+    flex-shrink: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.measurement-api:before {
+  position: absolute;
+  content: '';
+  background: url(../img/measurement-vawe-api.svg) 0 0/contain no-repeat;
+  width: 100%;
+  height: 80px;
+  top: -65px;
+  @include tablet-lg {
+    height: 100px;
+    top: -45px;
+  }
+  @include tablet-md {
+    top: -35px;
+  }
+  @include mobile-lg{
+    top: -15px;
+  }
+
+}

@@ -1,0 +1,532 @@
+.tiktok-hero {
+  padding-top: 102px;
+  background: #F5FFFF;
+  margin-bottom: 115px;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+    padding-bottom: 100px;
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+  }
+
+  &__h1 {
+    max-width: 550px;
+    margin-bottom: 16px;
+  }
+
+  .eim-circle:before {
+    width: 284px;
+    height: 80px;
+    bottom: 0;
+    left: -24px;
+    background: url("../img/eim-circle-2.png") no-repeat /contain;
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    width: 825px;
+    height: 639px;
+  }
+}
+
+.tiktok-hero:after {
+  position: absolute;
+  content: '';
+  background: url("../img/tiktok-hero-wave.png") no-repeat /contain;
+  width: 100%;
+  height: 118px;
+  bottom: -110px;
+}
+
+.tiktok-creator {
+  padding-bottom: 176px;
+  position: relative;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+  }
+
+  &__item:nth-child(2) {
+    position: relative;
+  }
+
+  &__item:nth-child(2):before {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-creator-arrow.png") no-repeat /contain;
+    width: 120.29px;
+    height: 120.91px;
+    top: 170px;
+    right: 102%;
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: 60px;
+    max-width: 640px;
+  }
+
+  &__img {
+    width: 668px;
+  }
+}
+
+.tiktok-creator:before {
+  position: absolute;
+  content: '';
+  background: url("../img/tiktok-creator-dots.png") no-repeat /contain;
+  width: 154px;
+  height: 158px;
+  bottom: 77px;
+  left: 0;
+}
+
+.tiktok-case {
+  padding-top: 103px;
+  margin-bottom: 109px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:first-child {
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-case-dots.png") no-repeat /contain;
+      width: 238px;
+      height: 237px;
+      top: -31px;
+      left: -39px;
+    }
+
+    &:after {
+      z-index: -1;
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-case-dots.png") no-repeat /contain;
+      width: 238px;
+      height: 237px;
+      bottom: -33px;
+      right: -27px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 109px;
+  }
+
+  &__img {
+    position: relative;
+    width: 437px;
+    height: auto;
+    border-radius: 36px;
+  }
+
+  &__body {
+    padding: 67.19px 42px 49px 58px;
+    border-radius: 16px;
+    background-color: $c-prussian-blue;
+    position: relative;
+    max-width: 596px;
+
+  }
+
+  .orange-label {
+    position: absolute;
+    padding: 16px 21px;
+    top: -30px;
+  }
+
+  &__h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    font-family: $work-sans;
+    color: $c-white;
+    text-align: left;
+    max-width: 552px;
+  }
+
+  &__description {
+    color: $c-white;
+    text-align: left;
+    margin-bottom: 16px;
+    font-family: $work-sans;
+  }
+
+}
+
+.tiktok-manage {
+  position: relative;
+  padding-top: 100px;
+  background-color: #F8F8F8;
+  padding-bottom: 76px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-manage-vector.png") no-repeat /contain;
+    width: 331px;
+    height: 310px;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-manage-dots.png") no-repeat /contain;
+    width: 238px;
+    height: 237px;
+    bottom: 66px;
+    right: -161px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 84px;
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+    max-width: 560px;
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 1036px;
+  }
+
+  &-slider {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  &-slider__body {
+    background-color: #DFE9EC;
+    border-radius: 36px;
+    padding: 59px 50px 62px 54px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: $work-sans;
+    color: $c-prussian-blue;
+  }
+
+  &-slider__description {
+    text-align: left;
+    margin-bottom: 16px;
+    max-width: 860px;
+  }
+}
+
+.tiktok-amplify {
+  padding-top: 160px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 103px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1035px;
+    margin: 0 auto;
+    padding-bottom: 114px;
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+  }
+
+  &__h2 {
+    text-align: center;
+    max-width: 610px;
+    margin-bottom: 16px;
+  }
+
+  &__middle {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    max-width: 1312px;
+    margin-bottom: 113px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-amplify-item2.png") no-repeat /contain;
+      width: 140px;
+      height: 45px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__item:nth-child(1) {
+    position: relative;
+    width: 60%;
+
+    &:before {
+      z-index: -100;
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-amplify-dots.svg") no-repeat /contain;
+      width: 238px;
+      height: 237px;
+      bottom: 24px;
+      right: 271px;
+    }
+
+    &:after {
+      z-index: -100;
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-amplify-vector.png") no-repeat /contain;
+      width: 182px;
+      height: 187px;
+      top: 16px;
+      right: 33px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    width: 40%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__h3 {
+    color: $c-prussian-blue;
+    margin-bottom: 16px;
+  }
+
+  .tiktok-amplify__middle .tiktok-amplify__description {
+    text-align: left;
+    max-width: 472px;
+  }
+}
+
+.tiktok-measure {
+  position: relative;
+  padding-top: 97px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-measure-vector2.png") no-repeat /contain;
+    width: 318px;
+    height: 443px;
+    bottom: 0;
+    right: -95px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-measure-vector.svg") no-repeat /contain;
+    width: 241px;
+    height: 249px;
+    top: 80px;
+    left: 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1044px;
+    margin: 0 auto;
+    padding-bottom: 74px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-measure-dots.svg") no-repeat /contain;
+      width: 325px;
+      height: 238px;
+      top: 80px;
+      left: 0;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 16px;
+  }
+
+  &__h2 {
+    margin-bottom: 16px;
+  }
+
+  &-slider__body {
+    background: #F6F5F5;
+    border-radius: 36px;
+    padding: 48px 61px 48px 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 722px;
+    margin-bottom: 170px
+  }
+
+  &-slider__item:nth-child(1) {
+    position: relative;
+    flex: 0 0 60%;
+    padding-right: 51px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-measure-circle.svg") no-repeat /contain;
+      width: 110px;
+      height: 54px;
+      top: 121px;
+      right: 155px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-measure-arrow.svg") no-repeat /contain;
+      width: 90px;
+      height: 152px;
+      bottom: 195px;
+      right: 16px;
+    }
+  }
+
+  &-slider__item:nth-child(2) {
+    flex: 0 0 40%;
+  }
+
+  &-slider__item:nth-child(3) {
+    flex: 0 0 100%;
+    display: inherit;
+  }
+
+  &-slider__img {
+    width: 100%;
+  }
+}
+
+.tiktok-cta {
+  position: relative;
+  background-color: $c-elm-blue;
+  padding-top: 121px;
+  padding-bottom: 118px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-cta-left.svg") no-repeat /contain;
+    width: 707px;
+    height: 198px;
+    top: 92px;
+    left: 36px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-cta-shapes.svg") no-repeat /contain;
+    width: 55px;
+    height: 141px;
+    top: 77px;
+    right: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../img/tiktok-cta-dots.svg") no-repeat /contain;
+      width: 187px;
+      height: 191px;
+      bottom: -97px;
+      right: 236px;
+    }
+  }
+
+  &__h2 {
+    color: $c-white;
+    font-size: 65px;
+    line-height: 120%;
+    max-width: 795px;
+    font-family: $work-sans;
+    margin-bottom: 56px;
+  }
+
+  .orange-line {
+    display: block;
+    position: relative;
+  }
+
+  .orange-line:after {
+    position: absolute;
+    content: '';
+    background: url("../img/tiktok-cta-line.svg") no-repeat /contain;
+    bottom: -7px;
+    left: 160px;
+    right: 0;
+    height: 19px;
+    width: 100%;
+    max-width: 476px;
+  }
+}

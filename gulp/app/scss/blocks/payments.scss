@@ -1,0 +1,165 @@
+.payments-hero {
+  padding: 150px 0;
+  background-color: #EDF5F5;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: center;
+  }
+
+  &__item {
+    width: 50%;
+  }
+
+  &__h4 {
+    margin-bottom: 16px;
+  }
+
+  &__h1 {
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.payments-creator {
+  padding: 150px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+  }
+
+  &__item:nth-child(1) {
+    width: 40%;
+  }
+
+  &__item:nth-child(2) {
+    width: 60%;
+  }
+
+  &__description {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+
+}
+
+.payments-affilates {
+  padding:150px;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+  }
+  &__item:nth-child(1){
+    width: 40%;
+  }
+  &__item:nth-child(2){
+    width: 60%;
+  }
+  &__h4{
+    margin-bottom: 16px;
+  }
+  &__h2{
+    margin-bottom: 16px;
+  }
+  &__description{
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+
+.payments-budget {
+  padding-top: 133px;
+  padding-bottom: 173px;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+  }
+  &__item:nth-child(1){
+    width: 40%;
+  }
+  &__item:nth-child(2){
+    width: 60%;
+
+  }
+  &__h4{
+    margin-bottom: 16px;
+  }
+  &__h2{
+    margin-bottom: 16px;
+  }
+  &__description{
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+
+.payments-campaigns {
+  padding-top: 65px;
+  padding-bottom: 125px;
+  position: relative;
+  background-color: #F8F8F8;
+  &__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+
+  }
+  &__item{
+    width: 50%;
+  }
+  &__h4{
+    margin-bottom: 16px;
+  }
+  &__h2{
+    margin-bottom: 16px;
+  }
+  &__description{
+    margin-bottom: 37px;
+  }
+  &__item:nth-child(1){
+    text-align: center;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+.payments-campaigns:after{
+  position: absolute;
+  content:'';
+  background: url('../img/payments-vawe.svg')no-repeat /contain;
+  width: 100%;
+  height: 118px;
+  bottom: -110px;
+}
+.payments-global {
+  padding-top: 177px;
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item{
+    width: 50%;
+  }
+}

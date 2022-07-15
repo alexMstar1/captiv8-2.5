@@ -1,0 +1,519 @@
+.btn {
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: $work-sans;
+}
+
+.btn-demo {
+  font-family: $work-sans;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160.3%;
+  color: $c-rose-white;
+  background-color: $c-elm-blue;
+  padding: 13px 57px;
+}
+
+.influencer-hero__btn {
+  display: inline-block;
+  padding: 16px 63px;
+  color: $c-white;
+  background-color: $c-prussian-blue;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+}
+
+.discovery-creator__btn {
+  padding: 16px 43px;
+  color: #FFFFFF;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  background: $c-elm-blue;
+  box-shadow: 0px 4px 30px rgba(67, 110, 130, 0.3);
+  @include mobile-lg{
+    text-align: center;
+  }
+}
+
+.manage-creator__demo {
+  padding: 16px 86.5px;
+  color: $c-white;
+  background-color: $c-prussian-blue;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+}
+
+.measure-result__btn {
+  padding: 16px 56px;
+  background-color: $c-elm-blue;
+  color: $c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  @include mobile-lg{
+    text-align: center;
+  }
+  @include mobile-md{
+    font-size: 20px;
+  }
+}
+
+.cta-influencer__btn {
+  padding: 16px 61px;
+  background-color: $c-perisimmon;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: $c-white;
+  display: inline-block;
+  @include mobile-md{
+    padding:16px 61px;
+  }
+}
+.paid-hero__btn{
+  padding: 16px 88px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  @include mobile-md{
+    padding:16px 80px
+  }
+}
+.results__btn{
+  display: inline-block;
+  padding: 16px 69.5px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  text-align: left;
+}
+.boosted__btn{
+  display: inline-block;
+  padding: 16px 81px ;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+.testing__btn{
+  display: inline-block;
+  padding: 16px 58px;
+  background-color:$c-elm-blue;
+  color:$c-white;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.tiktok-hero__btn{
+  display: inline-block;
+  padding: 16px 88px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.tiktok-creator__btn{
+  padding:16px 76.5px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+
+
+}
+.tiktok-case__link{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color:$c-perisimmon;
+  text-decoration: none;
+  svg{
+    margin-left: 10px;
+  }
+}
+.tiktok-manage__link {
+  font-family: $work-sans;
+  color:$c-prussian-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  svg{
+    margin-left: 15px;
+  }
+}
+.tiktok-amplify__btn{
+  color:$c-white;
+  background-color:$c-elm-blue;
+  padding: 16px 40px;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.tiktok-measure__btn{
+  color:$c-white;
+  background-color:$c-elm-blue;
+  padding: 16px 23px;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tiktok-cta__btn{
+  padding: 16px 61px;
+  color:$c-white;
+  font-family: $work-sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color:$c-perisimmon;
+}
+.commerce-hero__btn{
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  background-color: $c-prussian-blue;
+  padding: 16px 88px;
+}
+.commerce-measure__link{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  color:$c-prussian-blue;
+  svg{
+    margin-left: 16px;
+  }
+}
+.commerce-case__link{
+  color:$c-perisimmon;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: none;
+  svg{
+    margin-left: 15px;
+  }
+}
+.commerce-cta__btn{
+  color: $c-white;
+  padding: 16px 87px;
+  background-color:$c-perisimmon;
+  font-family: $work-sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 24px;
+  @include mobile-md{
+    font-size: 25px;
+  }
+}
+.measurement-hero__btn{
+  display: inline-block;
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  padding: 16px 87px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.measurement-reporting__btn{
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  padding: 16px 87px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.measurement-customized-slider__btn{
+  color:$c-white;
+  font-family: $work-sans;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 22px;
+  margin: 0 auto;
+  background-color: $c-elm-blue;
+  padding: 16px 41px;
+  @include mobile-lg{
+    padding: 13px 11px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  @include mobile-md{
+    font-size: 16px;
+  }
+}
+.measurement-api__btn{
+  padding:16px 38px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+}
+.payments-hero__btn{
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  padding: 16px 87px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.payments-creator__btn{
+  padding: 16px 64px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-affilates__btn{
+  padding:16px 34px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-budget__btn{
+  padding: 16px 76px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-campaigns__btn{
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 16px 89px;
+}
+.payments-global__btn{
+  background-color: #ed634d;
+  color:$c-white;
+  padding: 15px 56px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.advanced-plan__btn{
+  font-weight: 600;
+  font-size: 22px;
+  padding:16px 89px;
+  line-height: 24px;
+  font-family: $work-sans;
+  color:$c-white;
+  background: $c-prussian-blue;
+  margin-top: 84px;
+}
+.advanced-discover__btn{
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  padding: 16px 96px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.advanced-measure__btn{
+  background: $c-prussian-blue;
+  color:$c-white;
+  padding: 16px 73px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.creator-hero__btn{
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  padding: 16px 89px;
+}
+.creator-hub__btn{
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  padding: 16px 34px;
+  margin-top: 25px;
+  @include mobile-lg{
+    display: flex;
+    width: 100%;
+    padding:16px 24px;
+  }
+  @include mobile-md{
+    text-align: center;
+  }
+}
+
+.creator-pay__btn{
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  padding: 16px 87px;
+}
+.company-hero__btn{
+  padding: 16px 61px;
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.company-culture__btn{
+  text-align: center;
+  padding: 16px 110px;
+  background: $c-elm-blue;
+  color: $c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.company-change__btn{
+  color:$c-white;
+  background: $c-prussian-blue;
+  padding: 16px 89px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.home-solution__btn{
+  background:$c-perisimmon;
+  color:$c-white;
+  padding: 16px 62px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.home-data__btn{
+  padding: 16px 89px;
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.home-diversity__btn{
+  padding: 16px 89px;
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.home-reviews__btn{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+color:$c-prussian-blue;
+}
+.home-services__btn{
+  padding: 16px 89px;
+  color:$c-prussian-blue;
+  background:#B5DCD9 ;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  @include tablet-md{
+    padding: 16px 60px;
+  }
+}
+.home-cta__btn{
+  background: #ED634D;
+  color: #FFFFFF;
+  padding: 16px 56px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.managed-hero__btn{
+  padding: 16px 89px;
+  background: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.managed-services__btn{
+  color:$c-white;
+  background: $c-prussian-blue;
+  padding: 16px 89px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.managed-full__btn{
+  color:$c-white;
+  background: $c-prussian-blue;
+  padding: 16px 89px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.managed-support__btn{
+  padding: 16px 55px;
+  color:$c-white;
+  background: $c-elm-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+}

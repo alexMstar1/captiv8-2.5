@@ -1,0 +1,302 @@
+.btn {
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: $work-sans;
+}
+
+.btn-demo {
+  font-family: $work-sans;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160.3%;
+  color: $c-rose-white;
+  background-color: $c-elm-blue;
+  padding: 10.88px 57.69px 13.27px 58.97px;
+}
+
+.influencer-hero__btn {
+  display: inline-block;
+  padding: 16px 63px;
+  color: $c-white;
+  background-color: $c-prussian-blue;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+}
+
+.discovery-creator__btn {
+  padding: 16px 43px;
+  color: #FFFFFF;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  background: $c-elm-blue;
+  box-shadow: 0px 4px 30px rgba(67, 110, 130, 0.3);
+}
+
+.manage-creator__demo {
+  padding: 16px 86.5px;
+  color: $c-white;
+  background-color: $c-prussian-blue;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+
+}
+
+.measure-result__btn {
+  padding: 16px 56px;
+  background-color: $c-elm-blue;
+  color: $c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+
+.cta-influencer__btn {
+  padding: 16px 61px;
+  background-color: $c-perisimmon;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: $c-white;
+  display: inline-block;
+}
+.paid-hero__btn{
+  padding: 16px 88px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.results__btn{
+  display: inline-block;
+  padding: 16px 69.5px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  text-align: left;
+}
+.boosted__btn{
+  display: inline-block;
+  padding: 16px 81px ;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+.testing__btn{
+  display: inline-block;
+  padding: 16px 58px;
+  background-color:$c-elm-blue;
+  color:$c-white;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.tiktok-hero__btn{
+  display: inline-block;
+  padding: 16px 88px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+}
+.tiktok-creator__btn{
+  padding:16px 76.5px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  display: inline-block;
+}
+.tiktok-case__link{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color:$c-perisimmon;
+  text-decoration: none;
+  svg{
+    margin-left: 10px;
+  }
+}
+.tiktok-manage__link {
+  font-family: $work-sans;
+  color:$c-prussian-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  svg{
+    margin-left: 15px;
+  }
+}
+.tiktok-amplify__btn{
+  color:$c-white;
+  background-color:$c-elm-blue;
+  padding: 16px 40px;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.tiktok-measure__btn{
+  color:$c-white;
+  background-color:$c-elm-blue;
+  padding: 16px 23px;
+  font-family: $work-sans;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tiktok-cta__btn{
+  padding: 16px 61px;
+  color:$c-white;
+  font-family: $work-sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color:$c-perisimmon;
+}
+.commerce-hero__btn{
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $work-sans;
+  background-color: $c-prussian-blue;
+  padding: 16px 88px;
+}
+.commerce-measure__link{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  color:$c-prussian-blue;
+  svg{
+    margin-left: 16px;
+  }
+}
+.commerce-case__link{
+  color:$c-perisimmon;
+  font-family: $work-sans;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-decoration: none;
+  svg{
+    margin-left: 15px;
+  }
+}
+.commerce-cta__btn{
+  color: $c-white;
+  padding: 16px 87px;
+  background-color:$c-perisimmon;
+  font-family: $work-sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.measurement-hero__btn{
+  display: inline-block;
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  padding: 16px 87px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.measurement-reporting__btn{
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  padding: 16px 87px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.measurement-customized-slider__btn{
+  color:$c-white;
+  font-family: $work-sans;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 22px;
+  margin: 0 auto;
+  background-color: $c-elm-blue;
+  padding: 16px 41px;
+}
+.measurement-api__btn{
+  padding:16px 38px;
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+}
+.payments-hero__btn{
+  background-color: $c-prussian-blue;
+  color:$c-white;
+  font-weight: 600;
+  padding: 16px 87px;
+  font-size: 22px;
+  line-height: 24px;
+}
+.payments-creator__btn{
+  padding: 16px 64px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-affilates__btn{
+  padding:16px 34px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-budget__btn{
+  padding: 16px 76px;
+  color:$c-white;
+  background-color: $c-elm-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.payments-campaigns__btn{
+  color:$c-white;
+  background-color: $c-prussian-blue;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 16px 89px;
+}

@@ -1,0 +1,25 @@
+@import 'mixin';
+@import 'variables'; // variables
+@import 'reset'; // reset CSS
+@import 'fonts'; // fonts initialization
+
+@import 'container'; // container
+@import 'buttons'; // buttons sheets
+@import 'ui-elements'; // ui elements: slider, hand-drawing etc.
+@import 'typography'; //typography  headings, description,span
+
+// BEM-blocks initialization
+@import 'blocks/header';
+@import 'blocks/homepage';
+@import 'blocks/influencer';
+@import 'blocks/tiktok';
+@import 'blocks/paid';
+@import 'blocks/commerce';
+@import 'blocks/payments';
+@import 'blocks/measurement';
+@import 'blocks/advanced';
+@import 'blocks/creator';
+@import 'blocks/company';
+@import 'blocks/managed';
+@import 'blocks/footer';
+
