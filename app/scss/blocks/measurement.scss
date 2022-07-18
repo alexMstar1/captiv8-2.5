@@ -563,6 +563,7 @@
   }
 
   &__body {
+    width: unset;
     @include tablet-md {
       width: 100%;
     }

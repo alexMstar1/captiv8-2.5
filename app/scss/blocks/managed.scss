@@ -768,6 +768,9 @@
     line-height: 24px;
     color: $c-prussian-blue;
     text-decoration: none;
+    svg{
+      margin-left: 23px;
+    }
   }
 
   &__h3 {

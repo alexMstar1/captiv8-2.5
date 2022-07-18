@@ -396,7 +396,9 @@
     flex-direction: column;
     align-items: center;
   }
-
+  &__body{
+    width: unset;
+  }
   &__h4 {
     margin-bottom: 63px;
   }

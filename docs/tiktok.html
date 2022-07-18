@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Captiv8</title>
-  <link rel="stylesheet" href="css/main.css?t=1657808663814">
+  <link rel="stylesheet" href="css/main.css?t=1658134956706">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide-core.min.css">
 </head>
@@ -679,7 +679,7 @@
                         <li class="splide__slide">
                             <div class="tiktok-manage-slider__body">
                                 <div class="tiktok-manage-slider__left">
-                                    <img src="img/tiktok-perfomance.svg" alt="">
+                                    <img src="img/tiktok-perfomance.svg" alt="" class="tiktok-manage__img">
                                 </div>
                                 <div class="tiktok-manage-slider__right">
                                     <h3 class="tiktok-manage__h3 h3">Activate for Performance</h3>
@@ -702,7 +702,7 @@
                         <li class="splide__slide">
                             <div class="tiktok-manage-slider__body">
                                 <div class="tiktok-manage-slider__left">
-                                    <img src="img/tiktok-workflow.svg" alt="">
+                                    <img src="img/tiktok-workflow.svg" alt="" class="tiktok-manage__img">
                                 </div>
                                 <div class="tiktok-manage-slider__right">
                                     <h3 class="tiktok-manage__h3 h3">Content and Communication Workflow</h3>
@@ -725,7 +725,7 @@
                         <li class="splide__slide">
                             <div class="tiktok-manage-slider__body">
                                 <div class="tiktok-manage-slider__left">
-                                    <img src="img/tiktok-payments.svg" alt="">
+                                    <img src="img/tiktok-payments.svg" alt="" class="tiktok-manage__img">
                                 </div>
                                 <div class="tiktok-manage-slider__right">
                                     <h3 class="tiktok-manage__h3 h3">Payments</h3>
@@ -973,6 +973,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var splide = new Splide('.tiktok-manage-slider', {
             gap: 20,
+            perPage: 1,
         }).mount();
 
 

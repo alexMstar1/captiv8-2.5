@@ -519,6 +519,7 @@
 
   &__body {
     background: $c-white;
+    width: unset;
     @include tablet-lg {
       width: 100%;
     }

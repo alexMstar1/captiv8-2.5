@@ -25,7 +25,7 @@
     @include tablet-md {
       max-width: 100%;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       font-size: 55px;
     }
   }
@@ -42,14 +42,14 @@
       bottom: -4px;
       left: -407px;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       width: 194px;
       height: 80px;
       bottom: -24px;
       left: -7px;
     }
-    @include mobile-md{
-      left:-215px;
+    @include mobile-md {
+      left: -215px;
     }
   }
 
@@ -136,13 +136,13 @@
         margin-left: 220px;
       }
     }
-    @include mobile-lg{
+    @include mobile-lg {
       a {
         margin-left: 50px;
       }
     }
-    @include mobile-md{
-      a{
+    @include mobile-md {
+      a {
         margin-left: 10px;
       }
     }
@@ -187,7 +187,7 @@
 .tiktok-case {
   padding-top: 103px;
   margin-bottom: 109px;
-  @include mobile-lg{
+  @include mobile-lg {
     padding-top: 40px;
   }
 
@@ -215,7 +215,7 @@
       height: 237px;
       bottom: -33px;
       right: -27px;
-      @include mobile-md{
+      @include mobile-md {
         right: -18px;
       }
     }
@@ -237,7 +237,7 @@
     @include tablet-md {
       width: 50%
     }
-    @include mobile-lg{
+    @include mobile-lg {
       width: 100%;
     }
   }
@@ -261,7 +261,7 @@
     border-radius: 16px;
     background-color: $c-prussian-blue;
     position: relative;
-    @include tablet-lg{
+    @include tablet-lg {
       padding: 32px;
     }
 
@@ -283,7 +283,7 @@
     text-align: left;
     margin-bottom: 53px;
     max-width: 539px;
-    @include mobile-md{
+    @include mobile-md {
       text-align: justify;
       font-size: 27px;
     }
@@ -296,9 +296,9 @@
     font-size: 22px;
     line-height: 180%;
     max-width: 584px;
-  @include mobile-md{
-    text-align: justify;
-  }
+    @include mobile-md {
+      text-align: justify;
+    }
   }
 
 }
@@ -343,11 +343,16 @@
 
   }
 
+  &__img {
+    width: 154px;
+    height: 154px;
+  }
+
   &__h2 {
     margin-bottom: 16px;
     max-width: 560px;
     text-align: center;
-    @include tablet-lg{
+    @include tablet-lg {
       font-size: 40px;
     }
   }
@@ -369,10 +374,10 @@
     flex-direction: row;
     gap: 32px;
     align-items: center;
-    @include tablet-md{
-      padding: 36px ;
+    @include tablet-md {
+      padding: 36px;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       flex-direction: column;
     }
   }
@@ -389,7 +394,7 @@
     text-align: left;
     margin-bottom: 16px;
     max-width: 860px;
-    @include mobile-lg{
+    @include mobile-lg {
       text-align: justify;
     }
   }
@@ -397,7 +402,7 @@
 
 .tiktok-amplify {
   padding-top: 160px;
-  @include mobile-lg{
+  @include mobile-lg {
     padding-top: 70px;
   }
 
@@ -406,8 +411,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 103px;
-    @include mobile-lg{
-      a{
+    @include mobile-lg {
+      a {
         text-align: center;
       }
     }
@@ -430,7 +435,7 @@
     text-align: center;
     max-width: 610px;
     margin-bottom: 16px;
-    @include tablet-lg{
+    @include tablet-lg {
       font-size: 40px;
     }
   }
@@ -443,10 +448,10 @@
     align-items: center;
     max-width: 1312px;
     margin-bottom: 113px;
-    @include tablet-md{
+    @include tablet-md {
       flex-direction: column;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       margin-bottom: 50px;
 
     }
@@ -465,7 +470,7 @@
   &__item:nth-child(1) {
     position: relative;
     width: 60%;
-    @include tablet-md{
+    @include tablet-md {
       width: 100%;
     }
 
@@ -494,7 +499,7 @@
 
   &__item:nth-child(2) {
     width: 40%;
-    @include tablet-md{
+    @include tablet-md {
       width: 100%;
     }
   }
@@ -507,7 +512,7 @@
   &__h3 {
     color: $c-prussian-blue;
     margin-bottom: 16px;
-    @include tablet-md{
+    @include tablet-md {
       text-align: center;
     }
   }
@@ -515,7 +520,7 @@
   .tiktok-amplify__middle .tiktok-amplify__description {
     text-align: left;
     max-width: 472px;
-    @include tablet-md{
+    @include tablet-md {
       max-width: 100%;
       text-align: justify;
     }
@@ -526,7 +531,7 @@
   position: relative;
   padding-top: 97px;
   z-index: 1;
-  @include tablet-md{
+  @include tablet-md {
     padding-top: 20px;
   }
 
@@ -579,7 +584,7 @@
 
   &__h2 {
     margin-bottom: 16px;
-    @include tablet-lg{
+    @include tablet-lg {
       font-size: 40px;
     }
   }
@@ -594,13 +599,13 @@
     align-items: center;
     min-height: 722px;
     margin-bottom: 170px;
-    @include tablet-md{
+    @include tablet-md {
       flex-direction: column;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       padding: 32px;
     }
-    @include mobile-md{
+    @include mobile-md {
       margin-bottom: 50px;
     }
   }
@@ -609,7 +614,7 @@
     position: relative;
     flex: 0 0 48%;
     padding-right: 51px;
-    @include mobile-lg{
+    @include mobile-lg {
       padding-right: 0;
     }
 
@@ -636,14 +641,14 @@
 
   &-slider__description {
     text-align: left;
-    @include mobile-lg{
+    @include mobile-lg {
       text-align: justify;
     }
   }
 
   &-slider__item:nth-child(2) {
     flex: 0 0 49%;
-    @include tablet-md{
+    @include tablet-md {
       margin-bottom: 20px;
     }
   }
@@ -651,13 +656,13 @@
   &-slider__item:nth-child(3) {
     flex: 0 0 100%;
     display: inherit;
-    @include mobile-lg{
-      a{
+    @include mobile-lg {
+      a {
         text-align: center;
       }
     }
-    @include mobile-md{
-      a{
+    @include mobile-md {
+      a {
         font-size: 20px;
       }
     }
@@ -723,10 +728,10 @@
     max-width: 795px;
     font-family: $work-sans;
     margin-bottom: 56px;
-    @include mobile-lg{
+    @include mobile-lg {
       font-size: 55px;
     }
-    @include mobile-md{
+    @include mobile-md {
       font-size: 48px;
     }
   }
@@ -746,10 +751,10 @@
     height: 19px;
     width: 100%;
     max-width: 476px;
-    @include tablet-md{
+    @include tablet-md {
       left: 125px;
     }
-    @include mobile-lg{
+    @include mobile-lg {
       left: -5px;
     }
   }

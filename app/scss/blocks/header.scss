@@ -2,6 +2,14 @@
   font-family: $work-sans;
   background-color: $c-gray-99;
   position: relative;
+  @include tablet-lg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+  }
 
   &__content {
     display: flex;
@@ -26,10 +34,10 @@
       top: 100px;
       right: 0;
       width: 100%;
-      max-width: 400px;
-      height: auto;
+      height: 100%;
       display: none;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
       z-index: 8;
       padding: 40px;
       flex-direction: column;
@@ -46,15 +54,21 @@
 
   .is-active .header__inner:nth-child(1) {
     transform: translateY(15px) rotate(-40deg);
-    transition: transform .2s .1s;
-  }
+    transition: transform .3s .2ms, opacity .3s .2ms;  }
 
   .is-active .header__inner:nth-child(2) {
-    opacity: 0;
-    transition: transform .2s .2s, opacity .2s .2s;
+    display: none;
   }
+
   .is-active .header__inner:nth-child(3) {
     transform: translateY(15px) rotate(40deg);
+    transition: transform .3s .2ms, opacity .3s .2ms;
+  }
+
+  .navigation {
+    @include tablet-lg {
+      overflow-y: auto;
+    }
   }
 
   .menu-list {
@@ -96,6 +110,11 @@
           overflow: auto;
           right: 0;
           left: unset;
+          padding: 25px 0;
+          background-color: transparent;
+          p {
+            display: none;
+          }
         }
       }
 
@@ -170,6 +189,11 @@
 
     .dropdown-body {
       display: none;
+      @include tablet-lg{
+        li:not(:first-child){
+          display: none;
+        }
+      }
     }
 
     &__item:hover .dropdown-body {
@@ -198,6 +222,9 @@
   .header-action {
     display: flex;
     align-items: center;
+    @include tablet-lg {
+      justify-content: center;
+    }
 
     &__item:nth-child(1) {
       margin-right: 11px;
@@ -262,6 +289,8 @@
     width: 100%;
     position: relative;
     right: unset;
+    padding: 25px 0;
+    background-color: transparent;
   }
 }
 
@@ -271,6 +300,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 27px;
+
 }
 
 .is-item {
@@ -309,6 +339,8 @@
     right: unset;
     position: relative;
     width: 100%;
+    padding: 25px 0;
+    background: transparent;
   }
 }
 
