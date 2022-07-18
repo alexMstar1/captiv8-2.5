@@ -2,6 +2,7 @@
   font-family: $work-sans;
   background-color: $c-gray-99;
   position: relative;
+  z-index: 99;
   @include tablet-lg {
     position: fixed;
     top: 0;
@@ -28,6 +29,7 @@
 
   &__burger {
     display: flex;
+    flex-direction: row;
     gap: 190px;
     @include tablet-lg {
       position: fixed;

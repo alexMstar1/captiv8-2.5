@@ -10,9 +10,11 @@ img {
 }
 body{
   overflow-x: hidden;
+  font: 500 1.6rem/1.62 var(--base-font);
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 
 }
 ._lock{
